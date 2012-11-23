@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Socketlab::VERSION
   gem.authors       = ["amardaxini"]
   gem.email         = ["amardaxini@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Ruby Wrapper Of Socketlabs API}
+  gem.summary       = %q{Ruby Wrapper Of Socketlabs API}
+  gem.homepage      = "https://github.com/amardaxini/socketlab"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
