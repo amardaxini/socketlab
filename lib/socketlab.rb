@@ -4,6 +4,8 @@ require "socketlab/item"
 require "socketlab/account_data"
 require "socketlab/message_failed"
 require "socketlab/message_failed_item"
+require "socketlab/message_queued"
+require "socketlab/message_queued_item"
 require "socketlab/message_processed"
 require "socketlab/message_processed_item"
 require "socketlab/fbl_report"
@@ -28,3 +30,4 @@ module Socketlab
 
   end
 end
+
