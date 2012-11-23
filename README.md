@@ -1,6 +1,6 @@
 # Socketlab
 
-TODO: Write a gem description
+Ruby Wrapper Of Socketlabs api (http://www.socketlabs.com/api-reference/)
 
 ## Installation
 
@@ -34,7 +34,7 @@ account object returns Current Billing Period Start,Current BillingPeriod End...
 
 ###  Messages Failed
 
-    
+
     # https://api.socketlabs.com/v1/messagesFailed
     # date_format yyyy-mm-dd hh:mm:ss  If the time is omitted it will default to 00:00:00.
     # query=  {:serverId=>"required",:startDate=>date_format,:endDate=>date_format,:timeZone=> timeZone offset,
@@ -46,7 +46,7 @@ account object returns Current Billing Period Start,Current BillingPeriod End...
 
 ###  Messages Queued
 
-    
+
     # https://api.socketlabs.com/v1/messagesQueued
     # date_format yyyy-mm-dd hh:mm:ss  If the time is omitted it will default to 00:00:00.
     # query=  {:serverId=>"required",:startDate=>date_format,:endDate=>date_format,:timeZone=> timeZone offset,
@@ -56,30 +56,30 @@ account object returns Current Billing Period Start,Current BillingPeriod End...
     message.api_request(query)
     message.set_response
 
-###  Messages Processed 
-    
+###  Messages Processed
+
     # https://api.socketlabs.com/v1/messagesProcessed
     # date_format yyyy-mm-dd hh:mm:ss  If the time is omitted it will default to 00:00:00.
     # query=  {:serverId=>"",:startDate=>date_format,:endDate=>date_format,:timeZone=> timeZone offset,
     # mailingId=>"",:messageId=>"",:index=>"",:count=>"":type=>"JSON"}
 
-    message = Socketlab::MessageProcessed.new 
+    message = Socketlab::MessageProcessed.new
     message.api_request(query)
     message.set_response
 
 ###  Messages Fbl Reported
-    
+
     # https://api.socketlabs.com/v1/messagesFblReported
     # date_format yyyy-mm-dd hh:mm:ss  If the time is omitted it will default to 00:00:00.
     # query=  {:serverId=>"",:startDate=>date_format,:endDate=>date_format,:timeZone=> timeZone offset,
     # mailingId=>"",:messageId=>"",:index=>"",:count=>"":type=>"JSON"}
 
-    message = Socketlab::FblReport.new 
+    message = Socketlab::FblReport.new
     message.api_request(query)
     message.set_response
 
 ###  Messages Open Click
-    
+
     # https://api.socketlabs.com/v1/messagesOpenClick
     # date_format yyyy-mm-dd hh:mm:ss  If the time is omitted it will default to 00:00:00.
     # query=  {:serverId=>"",:startDate=>date_format,:endDate=>date_format,:timeZone=> timeZone offset,
