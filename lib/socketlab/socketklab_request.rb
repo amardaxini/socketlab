@@ -1,7 +1,7 @@
 module Socketlab
   class SocketlabRequest
     attr_accessor :api_user,:api_password,:api_server,:api_version,:query_params,:error
-    attr_accessor :total_count,:total_pages,:count,:items,:timestamp
+    attr_accessor :total_count,:total_pages,:count,:items,:timestamp,:api_response
 
     def initialize(api_user = nil, api_key = nil,api_server=nil,api_version=nil)
       @api_user = api_user || Socketlab.api_user
@@ -47,7 +47,7 @@ module Socketlab
       end
     end
 
-    def error?
+    def success?
       @api_response.success?
     end
 
